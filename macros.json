@@ -1,0 +1,52 @@
+{
+    "a": {
+        "label": "Open Google",
+        "action": { 
+            "type": "open_url", 
+            "url": "https://google.com" 
+        }
+    },
+    "b": {
+        "label": "Say Hello (terminal)",
+        "action": {
+        "type": "run_cmd",
+        "cmd": "echo Hello from Mini Macropad"
+        }
+    },
+    "c": {
+        "label": "Open chatGPT",
+        "action": {
+        "type": "open_app",
+        "app": "C:/Program Files/WindowsApps/OpenAI.ChatGPT-Desktop_1.2025.224.0_x64__2p2nqsd0c76g0/app/ChatGPT.exe"
+        }
+    },
+    "e": {
+        "label": "Open Claude AI",
+        "action": {
+        "type": "open_app",
+        "app": "C:/Users/lgarzon/Desktop/Claude.lnk"
+        }
+    },
+    "v": {
+        "label": "Open VS Code",
+        "action": {
+        "type": "open_app",
+        "app": "C:/Users/lgarzon/Desktop/Visual Studio Code.lnk"
+        }
+    },
+    "s": {
+        "label": "Open Spotify",
+        "action": {
+        "type": "open_app",
+        "app": "C:/Users/lgarzon/AppData/Roaming/Spotify/Spotify.exe"
+        }
+    },
+    "g": {
+        "label": "Open GitHub",
+        "action": {
+        "type": "open_url", 
+        "url": "https://github.com/Leonardo-Garzon-1995"
+        }
+    }
+    
+}
