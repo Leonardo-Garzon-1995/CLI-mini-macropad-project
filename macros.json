@@ -10,7 +10,7 @@
         "label": "Say Hello (terminal)",
         "action": {
         "type": "run_cmd",
-        "cmd": "echo Hello from Mini Macropad"
+        "cmd": "echo Are you having fun?"
         }
     },
     "c": {
@@ -47,6 +47,19 @@
         "type": "open_url", 
         "url": "https://github.com/Leonardo-Garzon-1995"
         }
+    },
+    "n": {
+        "label": "Open Netlify",
+        "action": {
+        "type": "open_url", 
+        "url": "https://app.netlify.com/teams/lgarzonlc/projects"
+        }
+    },
+    "y": {
+        "label": "Open YouTube",
+        "action": {
+        "type": "open_url", 
+        "url": "https://www.youtube.com"
+        }
     }
-    
 }

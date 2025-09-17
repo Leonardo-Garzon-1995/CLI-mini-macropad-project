@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const { exec } = require("child_process");
+const { default: chalk } = require("chalk");
 
 const macrosPath = path.join(__dirname, "macros.json");
 
@@ -11,9 +12,9 @@ let macros = JSON.parse(fs.readFileSync(macrosPath, "utf8"));
 fs.watchFile(macrosPath, () => {
     try {
         macros = JSON.parse(fs.readFileSync(macrosPath, "utf8"));
-        console.log("↻ Reloaded macros.json");
+        console.log(chalk.green("↻ Reloaded macros.json"));
     } catch (e) {
-        console.error("⚠️ macros.json invalid:", e.message);
+        console.error(chalk.red("⚠️ macros.json invalid:"), e.message);
     }
 });
 
@@ -38,7 +39,14 @@ function openApp(app) {
 }
 
 function runCmd(cmd) {
-  exec(cmd);
+  exec(cmd, { shell: "cmd.exe" }, (error, stdout, stderr) => {
+    if (error) {
+      console.error("⚠️ Command failed:", error.message);
+      return;
+    }
+    if (stderr) console.error("stderr:", stderr);
+    if (stdout) console.log(stdout);
+  });
 }
 
 
@@ -65,7 +73,7 @@ process.stdin.setEncoding("utf8");
 if (process.stdin.isTTY) process.stdin.setRawMode(true);
 process.stdin.resume();
 
-console.log("🎛  Mini Macropad ready.");
+console.log(chalk.blue("🎛  Mini Macropad ready."));
 console.log("➡  Press a key mapped in macros.json");
 console.log("⎋  Press q or Ctrl+C to exit.\n");
 
