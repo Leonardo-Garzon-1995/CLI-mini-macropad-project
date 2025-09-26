@@ -17,7 +17,7 @@
         "label": "Open chatGPT",
         "action": {
         "type": "open_app",
-        "app": "C:/Program Files/WindowsApps/OpenAI.ChatGPT-Desktop_1.2025.224.0_x64__2p2nqsd0c76g0/app/ChatGPT.exe"
+        "app": "C:/Program Files/WindowsApps/OpenAI.ChatGPT-Desktop_1.2025.258.0_x64__2p2nqsd0c76g0/app/ChatGPT.exe"
         }
     },
     "e": {
