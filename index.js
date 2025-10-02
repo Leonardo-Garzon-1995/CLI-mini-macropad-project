@@ -87,6 +87,6 @@ process.stdin.on("data", (key) => {
   } else {
     // Optional: show code for special keys (arrows, etc.)
     const show = key === "\r" ? "Enter" : JSON.stringify(key);
-    console.log(`(no macro mapped for ${show})`);
+    console.log(chalk.red(`(no macro mapped for ${show})`));
   }
 });
