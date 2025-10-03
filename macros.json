@@ -35,28 +35,28 @@
         }
     },
     "s": {
-        "label": "Open Spotify ",
+        "label": "Open Spotify 📻",
         "action": {
         "type": "open_app",
         "app": "C:/Users/lgarzon/AppData/Roaming/Spotify/Spotify.exe"
         }
     },
     "g": {
-        "label": "Open GitHub",
+        "label": "Open GitHub 👨‍💻",
         "action": {
         "type": "open_url", 
         "url": "https://github.com/Leonardo-Garzon-1995"
         }
     },
     "n": {
-        "label": "Open Netlify",
+        "label": "Open Netlify ⬆️",
         "action": {
         "type": "open_url", 
         "url": "https://app.netlify.com/teams/lgarzonlc/projects"
         }
     },
     "y": {
-        "label": "Open YouTube",
+        "label": "Open YouTube 📺",
         "action": {
         "type": "open_url", 
         "url": "https://www.youtube.com"
