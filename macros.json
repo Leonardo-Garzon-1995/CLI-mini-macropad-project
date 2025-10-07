@@ -20,6 +20,13 @@
         "app": "C:/Program Files/WindowsApps/OpenAI.ChatGPT-Desktop_1.2025.258.0_x64__2p2nqsd0c76g0/app/ChatGPT.exe"
         }
     },
+    "d": {
+        "label": "Open Discord 🎃",
+        "action": {
+        "type": "open_url",
+        "url": "https://discord.com/channels/@me"
+        }
+    },
     "e": {
         "label": "Open Claude AI 📲",
         "action": {
