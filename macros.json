@@ -1,9 +1,9 @@
 {
     "a": {
-        "label": "Open Google 🔍",
+        "label": "Open Data Anotation 📊",
         "action": { 
             "type": "open_url", 
-            "url": "https://google.com" 
+            "url": "https://app.dataannotation.tech/workers/projects" 
         }
     },
     "b": {
@@ -60,6 +60,13 @@
         "action": {
         "type": "open_url", 
         "url": "https://app.netlify.com/teams/lgarzonlc/projects"
+        }
+    },
+    "m": {
+        "label": "Open Major League Hacking ⌨️",
+        "action": {
+        "type": "open_url", 
+        "url": "https://ghw.mlh.io/?_gl=1*1sr95l7*_ga*MTYyMTI0NzgxNi4xNzYxMTk0NDQ3*_ga_E5KT6TC4TK*czE3NjIxNzIyNDYkbzE2JGcxJHQxNzYyMTcyMzM3JGozMiRsMCRoMA.."
         }
     },
     "y": {
