@@ -1,0 +1,37 @@
+{
+    "c": {
+        "label": "Open chatGPT 📲",
+        "action": {
+        "type": "open_app",
+        "app": "C:/....../chatgpt.exe"
+        }
+    },
+    "d": {
+        "label": "Open Discord 🎃",
+        "action": {
+        "type": "open_url",
+        "url": "https://discord.com"
+        }
+    },
+    "e": {
+        "label": "Open Claude AI 📲",
+        "action": {
+        "type": "open_app",
+        "app": "C:....../Claude.lnk"
+        }
+    },
+    "v": {
+        "label": "Open VS Code 💻",
+        "action": {
+        "type": "open_app",
+        "app": "C:/......./Desktop/Visual Studio Code.lnk"
+        }
+    },
+    "s": {
+        "label": "Open Spotify 📻",
+        "action": {
+        "type": "open_app",
+        "app": "C:/Spotify/Spotify.exe"
+        }
+    },
+}

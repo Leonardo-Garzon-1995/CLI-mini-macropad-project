@@ -20,6 +20,7 @@ fs.watchFile(macrosPath, () => {
     }
 });
 
+// Actions
 function openURL(url) {
   if (process.platform === "darwin") exec(`open "${url}"`);
   else if (process.platform === "win32") exec(`start "" "${url}"`, { shell: "cmd.exe" });
@@ -52,7 +53,7 @@ function runCmd(cmd) {
 }
 
 
-
+// -------------------------------------------------------------
 function runAction(action) {
   if (!action || !action.type) return;
   switch (action.type) {
