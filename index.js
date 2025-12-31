@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require("fs");
 const path = require("path");
 const { exec } = require("child_process");
@@ -78,14 +80,13 @@ console.log("➡  Press a key mapped in macros.json");
 console.log("⎋  Press q or Ctrl+C to exit.\n");
 
 process.stdin.on("data", (key) => {
-  if (key === "\u0003" || key === "q") process.exit(0); // Ctrl+C or q
+  if (key === "\u0003" || key === "q") process.exit(0); 
 
   const macro = macros[key];
   if (macro) {
     console.log(`→ ${macro.label}`);
     runAction(macro.action);
   } else {
-    // Optional: show code for special keys (arrows, etc.)
     const show = key === "\r" ? "Enter" : JSON.stringify(key);
     console.log(chalk.red(`(no macro mapped for ${show})`));
   }
